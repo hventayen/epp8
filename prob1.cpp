@@ -7,13 +7,25 @@ using std::endl;
 bool checkAnswer(const string &nameOfTest, bool received, bool expected);
 
 // Implement printString here
-
-
-
+void printString(string t)
+{
+  for (int i = 0; i < t.size(); i++)
+  {
+    std::cout << t[i] << " \n";
+  }
+}
 // Implement testString here
-
-
-
+int testString(string z)
+{
+  for (int j = 0; j < z.size(); j++)
+  {
+    if (z[j] != 'G' && z[j] != 'A' && z[j] != 'T' && z[j] != 'C')
+    {
+      return false;
+    }
+  }
+  return true;
+}
 // EDIT CODE BELOW *ONLY* FOR TESTING (ANY CODE BELOW WILL BE OVER-WRITTEN DURING GRADING WITH DIFFERENT TESTS)
 
 int main() {
